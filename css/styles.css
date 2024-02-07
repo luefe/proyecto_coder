@@ -1,0 +1,419 @@
+/*media query, usar dentro de cada slyle que ya dividi
+para adaptar a mobile lo que sea necesario*/
+
+
+
+/*styles nav y general*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 238, 248);
+}
+
+
+.enlace_nav:link {
+    color: white;
+
+}
+
+.enlace_nav:hover {
+    color: white;
+    text-decoration: overline 2px violet;
+}
+
+
+.index_img:hover {
+    border-top: 2px solid violet;
+}
+
+.carrito:hover {
+    border-top: 2px solid violet;
+    padding-top: 3px;
+}
+
+header {
+    background-color: rgb(217, 217, 217);
+    position: sticky;
+    top: 0px;
+    border-bottom: 2px solid rgb(192, 170, 197);
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+.banner {
+    width: 100%;
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(217, 217, 217);
+    list-style-type: none;
+    font-size: larger;
+}
+
+li {
+
+    text-decoration: overline violet;
+}
+
+.div2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.div2 a {
+    color: rgb(58, 55, 77);
+    font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgb(217, 217, 217);
+    width: 100%;
+    height: 60px;
+    display: flex;
+
+}
+
+nav img {
+    width: 45px;
+    height: 45px;
+}
+
+/*styles footer*/
+
+.icono_wsp {
+    position: fixed;
+    right: 10px;
+    bottom: 75px;
+}
+
+.icono_wsp img:hover {
+    width: 70px;
+}
+
+footer {
+    border: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 50px;
+}
+
+.seguinos {
+    display: flex;
+    flex-direction: column;
+}
+
+.seguinos div {
+    display: flex;
+    justify-content: center;
+}
+
+footer h4 {
+    margin: 0;
+    padding: 0;
+}
+
+footer form input {
+    width: 300px;
+}
+
+/*styles index*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.main_center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 60px;
+    justify-content: center;
+}
+
+h2 {
+    color: rgb(167, 156, 156);
+    font-size: 30px;
+    justify-content: center;
+}
+
+
+
+.main_center div {
+    height: auto;
+    justify-content: center;
+}
+
+
+
+p {
+    background-color: rgb(228, 160, 235);
+}
+
+h3 {
+    color: gray;
+    font-size: 20px;
+    justify-content: center;
+}
+
+/*styles tratamientos*/
+.tratamientos_corporales {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tratamientos_faciales {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.maquillaje_social {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tratamiento {
+    display: flex;
+    width: 280px;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.tratamiento a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.card img{
+    padding: 10px;
+}
+
+.tratamiento a h3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.tratamiento a img {
+    padding-left: 20px;
+    justify-content: center;
+
+}
+
+.tratamiento img {
+    width: 85%;
+    height: auto;
+    justify-content: center;
+}
+
+.ver_mas {
+    display: flex;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.servicios1 {
+    display: flex;
+    justify-content: center;
+}
+
+.servicios {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+
+}
+
+.servicios a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servicios a h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.servicios a img {
+    margin: 30px;
+    width: 380px;
+    height: 500px;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 500px) {
+
+    .servicios a img {
+        margin: 20px;
+        width: 90%;
+        height: 300px;
+        margin-top: 0;
+    }
+
+    .servicios {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .tratamientos_corporales {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 300px);
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .tratamientos_faciales {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .maquillaje_social {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tratamiento {
+        display: flex;
+        width: 100%;
+        border: 1px solid blueviolet;
+        padding: 10px;
+        margin: 10px;
+        justify-content: center;
+    }
+}
+
+/*styles nosotrxs*/
+.nosotrxs {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nosotrxs h2 {
+    flex-direction: column;
+    width: 48%;
+    height: fit-content;
+    position: sticky;
+    top: 70px;
+    background-color: rgb(243, 238, 248);
+    border-bottom: 2px solid rgb(192, 170, 197);
+    margin-top: 0;
+}
+
+.nosotrxs_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nosotrxs_content .texto {
+    width: 48%;
+    height: 400px;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+
+.img4 {
+    height: 400px;
+    width: 50%;
+}
+
+.img_content1 {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 200px);
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.nosotrxs_content p {
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+.nosotrxs_content .img1 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.nosotrxs_content .img2 {
+    height: 200px;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.nosotrxs_content .img3 {
+    height: 200px;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .nosotrxs_content {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .nosotrxs_content h2 {
+        width: 100%;
+    }
+
+    .img_content1 {
+        width: 100%;
+    }
+
+    .img4 {
+        width: 100%;
+        height: 200px;
+    }
+
+    .nosotrxs_content .texto {
+        width: 100%;
+    }
+
+
+}
+
+
+
+/*styles contacto*/
+
+
+
+/*styles confiramcion*/
