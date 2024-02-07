@@ -209,7 +209,10 @@ h3 {
     justify-content: center;
 }
 
-
+.card {
+    margin: 10px !important;
+    padding: 0 !important;
+}
 .card img{
     padding: 10px;
 }
