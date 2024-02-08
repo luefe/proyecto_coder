@@ -147,6 +147,14 @@ body {
     justify-content: center;
 }
 
+.carousel-inner{
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+
+
+
 h1 {
     color: blueviolet;
     font-size: 60px;
@@ -165,8 +173,6 @@ h2 {
     height: auto;
     justify-content: center;
 }
-
-
 
 p {
     background-color: rgb(228, 160, 235);
@@ -194,13 +200,10 @@ h3 {
     flex-wrap: wrap;
 }
 
-.tratamiento {
-    display: flex;
-    width: 280px;
-    border: 1px solid blueviolet;
-    padding: 10px;
-    margin: 10px;
-    justify-content: center;
+.col {
+    width: 100%;
+    padding: 0;
+
 }
 
 .tratamiento a {
