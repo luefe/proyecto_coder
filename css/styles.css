@@ -322,10 +322,9 @@ h3 {
 }
 
 
-.nosotrxs .h2 {
+.h2 {
     color: rgb(167, 156, 156);
     flex-direction: column;
-    /*width: 48%;*/
     height: fit-content;
     position: sticky;
     top: 70px;
@@ -340,30 +339,43 @@ h3 {
 .nosotrxs_content {
     display: flex;
     flex-wrap: wrap;
-   /* width: 100%;*/
+    width: 100%;
     justify-content: center;
 }
 
 .nosotrxs_content .texto {
-   /* width: 48%;*/
     height: fit-content;
     margin: 0px 5px 0 30px;
-    /*padding: 40px;*/
+    padding: 40px;
+}
+
+.imagenprueba {
+    width: 90%;
+    border-radius: 8%;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.col p {
+    margin: 0 10px 0 60px;
 }
 
 .img4 {
-    /*height: fit-content;*/
-   width: 45%;
+    height: fit-content;
+    width: 48%;
     padding: 0;
     margin: 0 0 0 0px;
-    border-radius: 5%;
 }
 .img4 img {
-    width: fit-content;
+    width: 100%;
+    border-radius: 10%;
+    margin-left: 0px;
+    align-items: center;
 }
 
+
 .img_content1 {
-    width: 40%;
+    width: 48%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 200px);
