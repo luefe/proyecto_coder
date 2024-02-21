@@ -1,0 +1,46 @@
+main{
+
+    .main_center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        color: blueviolet;
+        font-size: 60px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    h2 {
+        color: rgb(167, 156, 156);
+        font-size: 30px;
+        justify-content: center;
+    }
+
+    h3 {
+        color: gray;
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .p {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    div {
+        height: auto;
+        justify-content: center;
+
+        .carousel-inner {
+            width: 100%;
+            height: fit-content;
+            align-items: center;
+        }
+    }
+
+
+}
+

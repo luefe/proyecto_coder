@@ -134,53 +134,6 @@ footer form input {
     width: 300px;
 }
 
-/*styles index*/
-
-body {
-    font-family: 'Poppins', sans-serif;
-
-}
-
-.main_center {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.carousel-inner{
-    width: 100%;
-    height: fit-content;
-    align-items: center;
-}
-
-
-
-h1 {
-    color: blueviolet;
-    font-size: 60px;
-    justify-content: center;
-}
-
-h2 {
-    color: rgb(167, 156, 156);
-    font-size: 30px;
-    justify-content: center;
-}
-
-
-
-.main_center div {
-    height: auto;
-    justify-content: center;
-}
-
-
-
-h3 {
-    color: gray;
-    font-size: 20px;
-    justify-content: center;
-}
 
 /*styles tratamientos*/
 .tratamientos_corporales {

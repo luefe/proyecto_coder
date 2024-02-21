@@ -1,0 +1,139 @@
+.servicios1 {
+    display: flex;
+    justify-content: center;
+
+    .servicios {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        margin-left: 150px;
+        margin-right: 150px;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-decoration: none;
+
+            h2 {
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                margin: 30px;
+                width: 350px;
+                height: 250px;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+
+.tratamientos_corporales {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tratamientos_faciales {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.maquillaje_social {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.h2_trat {
+    padding-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: underline gray 2px;
+    border-top: 2px solid rgb(192, 170, 197);
+}
+
+.col {
+    width: 100%;
+    padding: 0;
+
+    .card {
+        margin: 10px !important;
+        padding: 0 !important;
+
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            img {
+                padding: 10px;
+            }
+
+            .ver_mas {
+                display: flex;
+                width: 50px !important;
+                height: 50px !important;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .servicios a img {
+        margin: 20px;
+        width: 90%;
+        height: 300px;
+        margin-top: 0;
+    }
+
+    .servicios {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .tratamientos_corporales {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 300px);
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .tratamientos_faciales {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .maquillaje_social {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tratamiento {
+        display: flex;
+        width: 100%;
+        border: 1px solid blueviolet;
+        padding: 10px;
+        margin: 10px;
+        justify-content: center;
+    }
+}
