@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(243, 238, 248);
+  margin: 3px solid black;
 }
 body .banner {
   width: 100%;
