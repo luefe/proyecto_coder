@@ -130,8 +130,14 @@ body {
                 display: flex;
                 justify-content: center;
 
-                img {
-                    width: 50px;
+                svg {
+                    width: 40px;
+                    height: 40px;
+                    color: rgb(88, 88, 88);
+                    padding: 4px;
+                    margin: 2px;
+                    border: 2px solid gray;
+                    border-radius: 50%;
                 }
             }
         }

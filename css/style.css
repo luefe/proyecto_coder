@@ -101,8 +101,14 @@ body footer .seguinos div {
   display: flex;
   justify-content: center;
 }
-body footer .seguinos div img {
-  width: 50px;
+body footer .seguinos div svg {
+  width: 40px;
+  height: 40px;
+  color: rgb(88, 88, 88);
+  padding: 4px;
+  margin: 2px;
+  border: 2px solid gray;
+  border-radius: 50%;
 }
 
 main .main_center {
@@ -117,7 +123,7 @@ main h1 {
   padding: 10px;
 }
 main h2 {
-  color: rgb(167, 156, 156);
+  color: rgb(88, 88, 88);
   font-size: 30px;
   justify-content: center;
 }
@@ -258,8 +264,13 @@ main div .carousel-inner {
 }
 
 .col {
+  display: flex;
   width: 100%;
   padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .col .d_none {
   display: none;
@@ -287,6 +298,11 @@ main div .carousel-inner {
 }
 .col .card a p {
   margin: 0;
+}
+.col .btn {
+  background-color: blueviolet;
+  border: blueviolet;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 500px) {
@@ -330,10 +346,14 @@ main div .carousel-inner {
   display: flex;
   width: fit-content;
   align-content: center;
+  align-items: center;
+  margin-bottom: 15px;
 }
-.contacto img {
+.contacto svg {
   width: 50px;
   height: 50px;
+  margin-right: 10px;
+  color: rgb(88, 88, 88);
 }
 
 .ubicación {
