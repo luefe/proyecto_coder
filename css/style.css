@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -260,6 +261,9 @@ main div .carousel-inner {
   width: 100%;
   padding: 0;
 }
+.col .d_none {
+  display: none;
+}
 .col .card {
   margin: 10px !important;
   padding: 0 !important;
@@ -321,6 +325,23 @@ main div .carousel-inner {
     margin: 10px;
     justify-content: center;
   }
+}
+.contacto {
+  display: flex;
+  width: fit-content;
+  align-content: center;
+}
+.contacto img {
+  width: 50px;
+  height: 50px;
+}
+
+.ubicación {
+  display: flex;
+  justify-content: center;
+}
+.ubicación iframe {
+  width: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */
