@@ -1,6 +1,15 @@
-.col {
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
 
-    margin-top: 0;
+@mixin colors ($color, $bgcolor){
+    color: $color;
+    background-color: $bgcolor;
+}
+
+
+.col {
 
     p {
         margin: 0 10px 0 60px;
@@ -11,12 +20,11 @@
         flex-direction: column;
 
         .h2 {
-            color: rgb(167, 156, 156);
+            @include colors (rgb(167, 156, 156), rgb(243, 238, 248));
             flex-direction: column;
             height: fit-content;
             position: sticky;
             top: 60px;
-            background-color: rgb(243, 238, 248);
             border-bottom: 2px solid rgb(192, 170, 197);
             margin-top: 0;
             padding-top: 15px;
@@ -44,7 +52,7 @@
 
     }
 
-    .imagenprueba {
+    .imagen_nos {
         width: 90%;
         border-radius: 8%;
         margin-top: 30px;
@@ -62,7 +70,6 @@
     .h2 {
         color: rgb(167, 156, 156);
         flex-direction: column;
-        height: fit-content;
         position: sticky;
         top: 60px;
         background-color: rgb(243, 238, 248);
@@ -74,7 +81,6 @@
     }
 
     .accordion {
-    
 
         .accordion-button {
             background-color: rgb(243, 238, 248);
