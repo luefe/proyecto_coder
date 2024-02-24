@@ -93,6 +93,15 @@ body footer h4 {
 body footer form input {
   width: 300px;
 }
+body footer form button {
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 8%;
+}
+body footer form button:hover {
+  background-color: rgb(185, 185, 185);
+}
 body footer .seguinos {
   display: flex;
   flex-direction: column;
@@ -145,7 +154,15 @@ main div .carousel-inner {
   height: fit-content;
   align-items: center;
 }
+main div .carousel-inner img {
+  height: 600px;
+  width: 1200px;
+  border-radius: 6%;
+}
 
+.col {
+  margin-top: 0;
+}
 .col p {
   margin: 0 10px 0 60px;
 }
@@ -158,18 +175,17 @@ main div .carousel-inner {
   flex-direction: column;
   height: fit-content;
   position: sticky;
-  top: 70px;
+  top: 60px;
   background-color: rgb(243, 238, 248);
   border-bottom: 2px solid rgb(192, 170, 197);
   margin-top: 0;
-  padding-top: 5px;
+  padding-top: 15px;
   padding-left: 30px;
   z-index: 1;
 }
 .col .nosotrxs .nosotrxs_content {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: center;
 }
 .col .nosotrxs .nosotrxs_content .texto {
@@ -188,7 +204,24 @@ main div .carousel-inner {
   margin-left: 10px;
 }
 
-.accordion-button {
+.nosotrxs {
+  display: flex;
+  flex-direction: column;
+}
+.nosotrxs .h2 {
+  color: rgb(167, 156, 156);
+  flex-direction: column;
+  height: fit-content;
+  position: sticky;
+  top: 60px;
+  background-color: rgb(243, 238, 248);
+  border-bottom: 2px solid rgb(192, 170, 197);
+  margin-top: 0;
+  padding-top: 15px;
+  padding-left: 30px;
+  z-index: 1;
+}
+.nosotrxs .accordion .accordion-button {
   background-color: rgb(243, 238, 248);
   color: rgb(167, 156, 156);
 }
@@ -222,22 +255,30 @@ main div .carousel-inner {
   justify-content: center;
   margin-left: 150px;
   margin-right: 150px;
+  margin-bottom: 20px;
 }
 .servicios1 .servicios a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-decoration: none;
+  text-decoration: underline 2px gray;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .servicios1 .servicios a h2 {
   display: flex;
   justify-content: center;
 }
 .servicios1 .servicios a img {
-  margin: 30px;
   width: 350px;
   height: 250px;
   margin-top: 0;
+  opacity: 100%;
+  transition: opacity 0.5s;
+  border-radius: 10%;
+}
+.servicios1 .servicios a img:hover {
+  opacity: 50%;
 }
 
 .tratamientos_corporales {
@@ -290,6 +331,12 @@ main div .carousel-inner {
 }
 .col .card a img {
   padding: 10px;
+  border-radius: 6%;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+.col .card a img:hover {
+  opacity: 50%;
 }
 .col .card a .ver_mas {
   display: flex;
@@ -301,8 +348,11 @@ main div .carousel-inner {
 }
 .col .btn {
   background-color: blueviolet;
-  border: blueviolet;
+  border: 0px;
   margin-bottom: 10px;
+}
+.col .btn:hover {
+  background-color: rgb(173, 121, 221);
 }
 
 @media screen and (max-width: 500px) {

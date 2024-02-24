@@ -38,6 +38,12 @@ main{
             width: 100%;
             height: fit-content;
             align-items: center;
+
+            img {
+                height: 600px;
+                width: 1200px;
+                border-radius: 6%;
+            }
         }
     }
 

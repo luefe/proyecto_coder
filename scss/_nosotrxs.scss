@@ -1,5 +1,7 @@
 .col {
 
+    margin-top: 0;
+
     p {
         margin: 0 10px 0 60px;
     }
@@ -13,11 +15,11 @@
             flex-direction: column;
             height: fit-content;
             position: sticky;
-            top: 70px;
+            top: 60px;
             background-color: rgb(243, 238, 248);
             border-bottom: 2px solid rgb(192, 170, 197);
             margin-top: 0;
-            padding-top: 5px;
+            padding-top: 15px;
             padding-left: 30px;
             z-index: 1;
         }
@@ -25,7 +27,6 @@
         .nosotrxs_content {
             display: flex;
             flex-wrap: wrap;
-            width: 100%;
             justify-content: center;
 
             .texto {
@@ -40,7 +41,7 @@
             }
 
         }
-    
+
     }
 
     .imagenprueba {
@@ -52,10 +53,37 @@
 
 }
 
-.accordion-button {
-    background-color: rgb(243, 238, 248);
-    color: rgb(167, 156, 156);
+
+
+.nosotrxs {
+    display: flex;
+    flex-direction: column;
+
+    .h2 {
+        color: rgb(167, 156, 156);
+        flex-direction: column;
+        height: fit-content;
+        position: sticky;
+        top: 60px;
+        background-color: rgb(243, 238, 248);
+        border-bottom: 2px solid rgb(192, 170, 197);
+        margin-top: 0;
+        padding-top: 15px;
+        padding-left: 30px;
+        z-index: 1;
+    }
+
+    .accordion {
+    
+
+        .accordion-button {
+            background-color: rgb(243, 238, 248);
+            color: rgb(167, 156, 156);
+        }
+    }
 }
+
+
 
 @media screen and (max-width: 500px) {
 
