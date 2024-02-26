@@ -20,7 +20,7 @@ body header {
   z-index: 2;
   margin-bottom: 0;
 }
-body header .div2, body header .maderoterapia .container .div0 .div div, .maderoterapia .container .div0 .div body header div, body header .maderoterapia .container .div0 .div, .maderoterapia .container .div0 body header .div {
+body header .div2, body header .descripcion .container .div0 .div div, .descripcion .container .div0 .div body header div, body header .descripcion .container .div0 .div, .descripcion .container .div0 body header .div {
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -29,7 +29,7 @@ body header .div2, body header .maderoterapia .container .div0 .div div, .madero
   top: 0px;
   background-color: rgb(217, 217, 217);
 }
-body header .div2 a, .maderoterapia .container .div0 .div body header div a, body header .maderoterapia .container .div0 .div a, .maderoterapia .container .div0 body header .div a {
+body header .div2 a, .descripcion .container .div0 .div body header div a, body header .descripcion .container .div0 .div a, .descripcion .container .div0 body header .div a {
   color: rgb(58, 55, 77);
   font-size: x-large;
 }
@@ -417,33 +417,33 @@ main div .carousel-inner img {
   border-radius: 6%;
 }
 
-.maderoterapia img {
+.descripcion img {
   opacity: 30%;
   width: 100%;
 }
-.maderoterapia .container .div0 {
+.descripcion .container .div0 {
   position: absolute;
   top: 250px;
   z-index: 1;
 }
-.maderoterapia .container .div0 .div2 h2, .maderoterapia .container .div0 .div h2 {
+.descripcion .container .div0 .div2 h2, .descripcion .container .div0 .div h2 {
   color: black;
 }
-.maderoterapia .container .div0 .div2 p, .maderoterapia .container .div0 .div p {
+.descripcion .container .div0 .div2 p, .descripcion .container .div0 .div p {
   color: black;
   margin-right: 50px;
 }
-.maderoterapia .container .div0 .div2 ul, .maderoterapia .container .div0 .div ul {
+.descripcion .container .div0 .div2 ul, .descripcion .container .div0 .div ul {
   color: black;
 }
-.maderoterapia .container .div0 .div2 h3, .maderoterapia .container .div0 .div h3 {
+.descripcion .container .div0 .div2 h3, .descripcion .container .div0 .div h3 {
   color: black;
   text-decoration: underline 1px;
 }
-.maderoterapia .container .div0 .div {
+.descripcion .container .div0 .div {
   display: flex;
 }
-.maderoterapia .container .div0 .div div {
+.descripcion .container .div0 .div div {
   width: 50%;
 }
 
