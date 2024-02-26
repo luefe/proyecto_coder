@@ -1,0 +1,48 @@
+.maderoterapia {
+    img {
+        opacity: 30%;
+        width: 100%;
+    }
+
+    .container {
+        .div0 {
+            position: absolute;
+            top: 250px;
+            z-index: 1;
+
+            .div2 {
+                h2 {
+                    color: black;
+                }
+
+                p {
+                    color: black;
+                    margin-right: 50px;
+                }
+
+                ul {
+                    color: black;
+                }
+                h3 {
+                    color: black;
+                    text-decoration: underline 1px;
+                }
+            }
+
+            .div {
+                @extend.div2;
+                display: flex;
+
+                div {
+                    @extend.div2;
+                    width: 50%;
+                }
+
+            }
+
+        }
+
+    }
+
+
+}

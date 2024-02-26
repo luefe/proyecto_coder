@@ -11,9 +11,7 @@
 
 .col {
 
-    p {
-        margin: 0 10px 0 60px;
-    }
+    
 
     .nosotrxs {
         display: flex;
@@ -46,6 +44,8 @@
             p {
                 margin: 0;
                 padding: 0;
+                margin: 0 10px 0 30px;
+                font-size: larger;
             }
 
         }
@@ -68,23 +68,20 @@
     flex-direction: column;
 
     .h2 {
-        color: rgb(167, 156, 156);
+        @include colors (rgb(167, 156, 156), rgb(243, 238, 248));
         flex-direction: column;
         position: sticky;
         top: 60px;
-        background-color: rgb(243, 238, 248);
         border-bottom: 2px solid rgb(192, 170, 197);
         margin-top: 0;
         padding-top: 15px;
-        padding-left: 30px;
         z-index: 1;
     }
 
     .accordion {
 
         .accordion-button {
-            background-color: rgb(243, 238, 248);
-            color: rgb(167, 156, 156);
+            @include colors (rgb(167, 156, 156), rgb(243, 238, 248));
         }
     }
 }

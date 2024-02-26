@@ -1,3 +1,13 @@
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin colors ($color, $bgcolor){
+    color: $color;
+    background-color: $bgcolor;
+}
+
 .servicios1 {
     display: flex;
     justify-content: center;
@@ -24,8 +34,7 @@
             }
 
             img {
-                width: 350px;
-                height: 250px;
+                @include sizes(350px, 250px);
                 margin-top: 0;
                 opacity: 100%;
                 transition: opacity 0.5s;
@@ -106,8 +115,7 @@
 
             .ver_mas {
                 display: flex;
-                width: 50px !important;
-                height: 50px !important;
+                @include sizes(50px !important,50px !important )
             }
 
             p {

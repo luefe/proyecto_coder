@@ -1,3 +1,9 @@
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
 .contacto {
     display: flex;
     width: fit-content;
@@ -5,13 +11,14 @@
     align-items: center;
     margin-bottom: 15px;
     svg {
-        width: 50px;
-        height: 50px;
+        @include sizes(50px, 50px );
         margin-right: 10px;
         color: rgb(88, 88, 88);
     }
 
-    
+    h3 {
+        font-size: x-large;
+    }
 }
 
 .ubicación {
@@ -20,5 +27,8 @@
 
     iframe {
         width: 90%;
+        margin-bottom: 15px;
+        border-radius: 6%;
+
     }
 }

@@ -1,3 +1,9 @@
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+
 main{
 
     .main_center {
@@ -35,11 +41,11 @@ main{
         justify-content: center;
 
         .carousel-inner {
-            width: 100%;
-            height: fit-content;
+            @include sizes(100%, fit-content);
             align-items: center;
 
             img {
+                @include sizes(1200px, 600px);
                 height: 600px;
                 width: 1200px;
                 border-radius: 6%;
