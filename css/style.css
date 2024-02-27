@@ -122,6 +122,43 @@ body footer .seguinos div svg {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 500px) {
+  .banner {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 0 rgb(243, 238, 248) solid;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .mail {
+    border: 0 rgb(243, 238, 248) solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .mail h4 {
+    font-size: large;
+  }
+  footer .seguinos {
+    width: 100%;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 main .main_center {
   width: 100%;
   display: flex;
@@ -181,19 +218,24 @@ main div .carousel-inner img {
   padding-left: 30px;
   z-index: 1;
 }
+.col .nosotrxs .row {
+  margin-left: 40px;
+  padding-left: 40px;
+}
 .col .nosotrxs .nosotrxs_content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .col .nosotrxs .nosotrxs_content .texto {
+  width: 90%;
   height: fit-content;
   margin: 0px 5px 0 30px;
   padding: 40px;
 }
 .col .nosotrxs .nosotrxs_content p {
   margin: 0;
-  padding: 0;
+  padding: 40;
   margin: 0 10px 0 30px;
   font-size: larger;
 }
@@ -225,22 +267,47 @@ main div .carousel-inner img {
 }
 
 @media screen and (max-width: 500px) {
-  .nosotrxs_content {
+  .main_center h1 {
+    font-size: 30px;
+  }
+  .main_center h2 {
+    font-size: 20px;
+  }
+  .fila_img {
+    display: none;
+  }
+  .imagen_nos {
+    display: none;
+  }
+  .img_mobile {
+    width: 90%;
+    border-radius: 8%;
+    padding: 10px;
+  }
+  .nosotrxs .h2 {
+    padding-left: 10px;
+  }
+  .nosotrxs .nosotrxs_content {
     display: flex;
-    flex-flow: column wrap;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .nosotrxs_content h2 {
+  .nosotrxs .nosotrxs_content .texto {
+    height: fit-content;
+    margin: 0;
+    padding: 0px;
     width: 100%;
   }
-  .img_content1 {
-    width: 100%;
+  .nosotrxs .nosotrxs_content p {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    font-size: medium;
   }
-  .img4 {
-    width: 100%;
-    height: 200px;
-  }
-  .nosotrxs_content .texto {
-    width: 100%;
+}
+@media screen and (min-width: 500px) {
+  .img_mobile {
+    display: none;
   }
 }
 .servicios1 {
@@ -337,9 +404,7 @@ main div .carousel-inner img {
   opacity: 50%;
 }
 .col .card a .ver_mas {
-  display: flex;
-  width: 50px !important;
-  height: 50px !important;
+  display: none;
 }
 .col .card a p {
   margin: 0;
@@ -354,40 +419,24 @@ main div .carousel-inner img {
 }
 
 @media screen and (max-width: 500px) {
-  .servicios a img {
-    margin: 20px;
-    width: 90%;
-    height: 300px;
-    margin-top: 0;
-  }
-  .servicios {
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .tratamientos_corporales {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 300px);
-    row-gap: 10px;
-    column-gap: 10px;
-  }
-  .tratamientos_faciales {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .maquillaje_social {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .tratamiento {
-    display: flex;
+  .servicios1 {
     width: 100%;
-    border: 1px solid blueviolet;
-    padding: 10px;
+  }
+  .servicios1 .servicios {
+    width: 100%;
     margin: 10px;
-    justify-content: center;
+  }
+  .servicios1 .servicios a {
+    margin: 20px;
+    width: 120px;
+    height: auto;
+  }
+  .servicios1 .servicios a h2 {
+    font-size: 30px;
+  }
+  .servicios1 .servicios a img {
+    width: 120px;
+    height: auto;
   }
 }
 .contacto {

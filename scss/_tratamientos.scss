@@ -3,7 +3,7 @@
     height: $height;
 }
 
-@mixin colors ($color, $bgcolor){
+@mixin colors ($color, $bgcolor) {
     color: $color;
     background-color: $bgcolor;
 }
@@ -111,11 +111,10 @@
             img:hover {
                 opacity: 50%;
             }
-            
+
 
             .ver_mas {
-                display: flex;
-                @include sizes(50px !important,50px !important )
+                display: none;
             }
 
             p {
@@ -141,44 +140,28 @@
 
 @media screen and (max-width: 500px) {
 
-    .servicios a img {
-        margin: 20px;
-        width: 90%;
-        height: 300px;
-        margin-top: 0;
-    }
-
-    .servicios {
-        display: flex;
-        width: 90%;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .tratamientos_corporales {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 300px);
-        row-gap: 10px;
-        column-gap: 10px;
-    }
-
-    .tratamientos_faciales {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .maquillaje_social {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .tratamiento {
-        display: flex;
+    .servicios1 {
         width: 100%;
-        border: 1px solid blueviolet;
-        padding: 10px;
-        margin: 10px;
-        justify-content: center;
+
+        .servicios {
+            width: 100%;
+            margin: 10px;
+
+            a {
+                margin: 20px;
+                @include sizes(120px, auto);
+
+                h2 {
+                    font-size: 30px;
+                }
+
+                img {
+                    width: 120px;
+                    height: auto;
+                }
+            }
+        }
+
+
     }
 }

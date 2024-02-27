@@ -160,3 +160,47 @@ body {
 
 
 }
+
+@media screen and (max-width: 500px) {
+
+    .banner {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border: 0 rgb(243, 238, 248) solid;
+        display: flex;
+        flex-direction: column;
+
+        .mail {
+            h4 {
+            font-size: large;
+            }
+            
+            border: 0 rgb(243, 238, 248) solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .seguinos {
+            width: 100%;
+            border: 2px solid gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+}
