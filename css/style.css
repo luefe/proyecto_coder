@@ -329,6 +329,7 @@ main div .carousel-inner img {
   text-decoration: underline 2px gray;
   margin-right: 20px;
   margin-left: 20px;
+  color: gray;
 }
 .servicios1 .servicios a h2 {
   display: flex;
@@ -388,11 +389,21 @@ main div .carousel-inner img {
 .col .card a {
   text-decoration: none;
   color: black;
+  text-decoration-color: black;
 }
 .col .card a .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: black;
+  text-decoration: none;
+}
+.col .card a .card-body p {
+  margin: 0;
+  color: black;
+}
+.col .card a .card-body svg {
+  color: black;
 }
 .col .card a img {
   padding: 10px;
@@ -402,12 +413,6 @@ main div .carousel-inner img {
 }
 .col .card a img:hover {
   opacity: 50%;
-}
-.col .card a .ver_mas {
-  display: none;
-}
-.col .card a p {
-  margin: 0;
 }
 .col .btn {
   background-color: blueviolet;
