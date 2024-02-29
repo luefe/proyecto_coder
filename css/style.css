@@ -149,7 +149,7 @@ body footer .seguinos div svg {
     align-items: center;
   }
   footer .mail h4 {
-    font-size: large;
+    font-size: medium;
   }
   footer .seguinos {
     width: 100%;
@@ -196,11 +196,25 @@ main div .carousel-inner {
 main div .carousel-inner img {
   width: 1200px;
   height: 600px;
-  height: 600px;
-  width: 1200px;
   border-radius: 6%;
 }
 
+@media screen and (max-width: 500px) {
+  .main_center .carousel-inner {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .main_center .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+  .main_center .p {
+    margin-left: 10px;
+    padding-left: 0;
+    width: 100%;
+  }
+}
 .col .nosotrxs {
   display: flex;
   flex-direction: column;
@@ -370,56 +384,57 @@ main div .carousel-inner img {
   border-top: 2px solid rgb(192, 170, 197);
 }
 
-.col {
+section .row .col-xl-3 {
   display: flex;
-  width: 100%;
   padding: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-.col .d_none {
+section .row .col-xl-3 .d_none {
   display: none;
 }
-.col .card {
+section .row .col-xl-3 .card {
   margin: 10px !important;
   padding: 0 !important;
 }
-.col .card a {
+section .row .col-xl-3 .card a {
   text-decoration: none;
   color: black;
   text-decoration-color: black;
 }
-.col .card a .card-body {
+section .row .col-xl-3 .card a .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: black;
-  text-decoration: none;
 }
-.col .card a .card-body p {
+section .row .col-xl-3 .card a .card-body h3 {
+  text-decoration: underline 1px gray;
+}
+section .row .col-xl-3 .card a .card-body p {
   margin: 0;
   color: black;
 }
-.col .card a .card-body svg {
+section .row .col-xl-3 .card a .card-body svg {
   color: black;
 }
-.col .card a img {
+section .row .col-xl-3 .card a img {
   padding: 10px;
   border-radius: 6%;
   opacity: 100%;
   transition: opacity 0.5s;
 }
-.col .card a img:hover {
+section .row .col-xl-3 .card a img:hover {
   opacity: 50%;
 }
-.col .btn {
+section .row .col-xl-3 .btn {
   background-color: blueviolet;
   border: 0px;
   margin-bottom: 10px;
 }
-.col .btn:hover {
+section .row .col-xl-3 .btn:hover {
   background-color: rgb(173, 121, 221);
 }
 

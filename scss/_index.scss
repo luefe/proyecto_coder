@@ -4,7 +4,7 @@
 }
 
 
-main{
+main {
 
     .main_center {
         width: 100%;
@@ -46,8 +46,6 @@ main{
 
             img {
                 @include sizes(1200px, 600px);
-                height: 600px;
-                width: 1200px;
                 border-radius: 6%;
             }
         }
@@ -56,3 +54,30 @@ main{
 
 }
 
+
+
+@media screen and (max-width: 500px) {
+
+    .main_center {
+
+        .carousel-inner {
+            position: relative; 
+            max-width: 100%;
+            overflow: hidden; 
+        
+            img {
+                @include sizes(100%, auto);
+            }
+        }
+        
+        .p {
+            margin-left: 10px;
+            padding-left: 0;
+            width: 100%;
+        }
+
+
+    }
+
+
+}
