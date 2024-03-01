@@ -9,7 +9,6 @@
 }
 
 
-.col {
 
     
 
@@ -58,7 +57,14 @@
 
     }
 
-    
+    .images {
+        width: 100%;
+        margin: 0;
+        img {
+            width: 50%;
+            border-radius: 10%;
+        }
+    }    
     .imagen_nos {
         width: 90%;
         border-radius: 8%;
@@ -66,7 +72,7 @@
         margin-left: 10px;
     }
 
-}
+
 
 
 
