@@ -110,9 +110,7 @@ section {
                             text-decoration: underline 1px gray;
                         }
                         
-                        .card_mobile {
-                            display: none;
-                        }
+                        
 
                         p {
                             margin: 0;
@@ -189,4 +187,10 @@ section {
     .card_desktop {
         display: none;
     }
+}
+
+@media screen and (min-width: 501px) {
+.card_mobile {
+    display: none;
+}
 }

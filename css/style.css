@@ -418,9 +418,6 @@ section .row .col-6 .card a .card-body {
 section .row .col-6 .card a .card-body h3 {
   text-decoration: underline 1px gray;
 }
-section .row .col-6 .card a .card-body .card_mobile {
-  display: none;
-}
 section .row .col-6 .card a .card-body p {
   margin: 0;
   color: black;
@@ -468,6 +465,11 @@ section .row .col-6 .btn:hover {
     height: 75px;
   }
   .card_desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 501px) {
+  .card_mobile {
     display: none;
   }
 }
