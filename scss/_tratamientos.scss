@@ -11,6 +11,8 @@
 .servicios1 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 
     .servicios {
         display: flex;
@@ -75,7 +77,7 @@
 
 section {
     .row {
-        .col-xl-3 {
+        .col-6 {
             display: flex;
             padding: 0;
             flex-direction: column;
@@ -160,20 +162,20 @@ section {
         width: 100%;
 
         .servicios {
-            width: 100%;
+            width: 90%;
             margin: 10px;
 
             a {
-                margin: 20px;
+                margin: 10px;
                 @include sizes(120px, auto);
 
                 h2 {
-                    font-size: 30px;
+                    font-size: medium;
+                    align-items: center;
                 }
 
                 img {
-                    width: 120px;
-                    height: auto;
+                    @include sizes(100px, 75px)
                 }
             }
         }

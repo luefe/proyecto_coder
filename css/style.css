@@ -275,8 +275,11 @@ main div .carousel-inner img {
   padding-top: 15px;
   z-index: 1;
 }
+.nosotrxs .accordion {
+  margin-bottom: 10px;
+}
 .nosotrxs .accordion .accordion-button {
-  color: rgb(167, 156, 156);
+  color: rgb(114, 112, 112);
   background-color: rgb(243, 238, 248);
 }
 
@@ -294,7 +297,7 @@ main div .carousel-inner img {
     display: none;
   }
   .img_mobile {
-    width: 90%;
+    width: 100%;
     border-radius: 8%;
     padding: 10px;
   }
@@ -327,6 +330,8 @@ main div .carousel-inner img {
 .servicios1 {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .servicios1 .servicios {
   display: flex;
@@ -384,7 +389,7 @@ main div .carousel-inner img {
   border-top: 2px solid rgb(192, 170, 197);
 }
 
-section .row .col-xl-3 {
+section .row .col-6 {
   display: flex;
   padding: 0;
   flex-direction: column;
@@ -392,49 +397,49 @@ section .row .col-xl-3 {
   align-items: center;
   align-content: center;
 }
-section .row .col-xl-3 .d_none {
+section .row .col-6 .d_none {
   display: none;
 }
-section .row .col-xl-3 .card {
+section .row .col-6 .card {
   margin: 10px !important;
   padding: 0 !important;
 }
-section .row .col-xl-3 .card a {
+section .row .col-6 .card a {
   text-decoration: none;
   color: black;
   text-decoration-color: black;
 }
-section .row .col-xl-3 .card a .card-body {
+section .row .col-6 .card a .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: black;
 }
-section .row .col-xl-3 .card a .card-body h3 {
+section .row .col-6 .card a .card-body h3 {
   text-decoration: underline 1px gray;
 }
-section .row .col-xl-3 .card a .card-body p {
+section .row .col-6 .card a .card-body p {
   margin: 0;
   color: black;
 }
-section .row .col-xl-3 .card a .card-body svg {
+section .row .col-6 .card a .card-body svg {
   color: black;
 }
-section .row .col-xl-3 .card a img {
+section .row .col-6 .card a img {
   padding: 10px;
   border-radius: 6%;
   opacity: 100%;
   transition: opacity 0.5s;
 }
-section .row .col-xl-3 .card a img:hover {
+section .row .col-6 .card a img:hover {
   opacity: 50%;
 }
-section .row .col-xl-3 .btn {
+section .row .col-6 .btn {
   background-color: blueviolet;
   border: 0px;
   margin-bottom: 10px;
 }
-section .row .col-xl-3 .btn:hover {
+section .row .col-6 .btn:hover {
   background-color: rgb(173, 121, 221);
 }
 
@@ -443,20 +448,21 @@ section .row .col-xl-3 .btn:hover {
     width: 100%;
   }
   .servicios1 .servicios {
-    width: 100%;
+    width: 90%;
     margin: 10px;
   }
   .servicios1 .servicios a {
-    margin: 20px;
+    margin: 10px;
     width: 120px;
     height: auto;
   }
   .servicios1 .servicios a h2 {
-    font-size: 30px;
+    font-size: medium;
+    align-items: center;
   }
   .servicios1 .servicios a img {
-    width: 120px;
-    height: auto;
+    width: 100px;
+    height: 75px;
   }
 }
 .contacto {
@@ -486,6 +492,14 @@ section .row .col-xl-3 .btn:hover {
   border-radius: 6%;
 }
 
+@media screen and (max-width: 500px) {
+  .contacto h3 {
+    font-size: medium;
+  }
+  textarea {
+    width: 90%;
+  }
+}
 .descripcion img {
   opacity: 30%;
   width: 100%;

@@ -86,9 +86,10 @@
     }
 
     .accordion {
+        margin-bottom: 10px;
 
         .accordion-button {
-            @include colors (rgb(167, 156, 156), rgb(243, 238, 248));
+            @include colors (rgb(114, 112, 112), rgb(243, 238, 248));
         }
     }
 }
@@ -114,7 +115,7 @@
         display: none;
     }
     .img_mobile {
-        width: 90%;
+        width: 100%;
         border-radius: 8%;
         padding: 10px;
     }
