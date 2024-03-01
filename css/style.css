@@ -418,6 +418,9 @@ section .row .col-6 .card a .card-body {
 section .row .col-6 .card a .card-body h3 {
   text-decoration: underline 1px gray;
 }
+section .row .col-6 .card a .card-body .card_mobile {
+  display: none;
+}
 section .row .col-6 .card a .card-body p {
   margin: 0;
   color: black;
@@ -463,6 +466,9 @@ section .row .col-6 .btn:hover {
   .servicios1 .servicios a img {
     width: 100px;
     height: 75px;
+  }
+  .card_desktop {
+    display: none;
   }
 }
 .contacto {
