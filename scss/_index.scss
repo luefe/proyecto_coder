@@ -31,10 +31,7 @@ main {
         justify-content: center;
     }
 
-    .p {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+   
 
     div {
         height: auto;
@@ -68,12 +65,6 @@ main {
             img {
                 @include sizes(100%, auto);
             }
-        }
-        
-        .p {
-            margin-left: 10px;
-            padding-left: 0;
-            width: 100%;
         }
 
 

@@ -180,10 +180,6 @@ main h3 {
   font-size: 20px;
   justify-content: center;
 }
-main .p {
-  margin-left: 100px;
-  margin-right: 100px;
-}
 main div {
   height: auto;
   justify-content: center;
@@ -208,11 +204,6 @@ main div .carousel-inner img {
   .main_center .carousel-inner img {
     width: 100%;
     height: auto;
-  }
-  .main_center .p {
-    margin-left: 10px;
-    padding-left: 0;
-    width: 100%;
   }
 }
 .nosotrxs {
