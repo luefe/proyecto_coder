@@ -84,13 +84,12 @@ body .icono_wsp img:hover {
   width: 70px;
 }
 body footer {
-  border: 2px solid gray;
   display: flex;
   justify-content: space-between;
 }
 body footer h4 {
   margin: 0;
-  padding: 0;
+  padding: 5px;
 }
 body footer form input {
   width: 300px;
@@ -137,12 +136,11 @@ body footer .seguinos div svg {
     margin: 0;
     padding: 0;
     width: 100%;
-    border: 0 rgb(243, 238, 248) solid;
+    border-top: 2px gray solid;
     display: flex;
     flex-direction: column;
   }
   footer .mail {
-    border: 0 rgb(243, 238, 248) solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,10 +151,20 @@ body footer .seguinos div svg {
   }
   footer .seguinos {
     width: 100%;
-    border: 2px solid gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 501px) {
+  footer {
+    border: 2px solid gray;
+  }
+  footer .mail {
+    padding: 5px 0 0px 25px;
+  }
+  footer .seguinos {
+    padding: 5px 25px 5px 0px;
   }
 }
 main .main_center {
@@ -179,6 +187,10 @@ main h3 {
   color: gray;
   font-size: 20px;
   justify-content: center;
+  padding: 10px;
+}
+main .p {
+  font-size: larger;
 }
 main div {
   height: auto;
@@ -220,7 +232,6 @@ main div .carousel-inner img {
   border-bottom: 2px solid rgb(192, 170, 197);
   margin-top: 0;
   padding-top: 15px;
-  padding-left: 30px;
   z-index: 1;
 }
 .nosotrxs .row {
@@ -233,15 +244,9 @@ main div .carousel-inner img {
   justify-content: center;
 }
 .nosotrxs .nosotrxs_content .texto {
-  width: 90%;
+  width: 100%;
   height: fit-content;
-  margin: 0px 5px 0 30px;
-  padding: 40px;
-}
-.nosotrxs .nosotrxs_content p {
-  margin: 0;
-  padding: 40;
-  margin: 0 10px 0 30px;
+  margin: 20px 10px 0 0px;
   font-size: larger;
 }
 
@@ -255,7 +260,7 @@ main div .carousel-inner img {
 }
 
 .imagen_nos {
-  width: 90%;
+  width: 100%;
   border-radius: 8%;
   margin-top: 30px;
   margin-left: 10px;
@@ -477,7 +482,6 @@ section .row .col-6 .btn:hover {
 .contacto {
   display: flex;
   width: fit-content;
-  align-content: center;
   align-items: center;
   margin-bottom: 15px;
 }

@@ -25,7 +25,6 @@
             border-bottom: 2px solid rgb(192, 170, 197);
             margin-top: 0;
             padding-top: 15px;
-            padding-left: 30px;
             z-index: 1;
         }
 
@@ -40,16 +39,9 @@
             
 
             .texto {
-                width: 90%;
+                width: 100%;
                 height: fit-content;
-                margin: 0px 5px 0 30px;
-                padding: 40px;
-            }
-
-            p {
-                margin: 0;
-                padding: 40;
-                margin: 0 10px 0 30px;
+                margin: 20px 10px 0 0px;
                 font-size: larger;
             }
 
@@ -66,7 +58,7 @@
         }
     }    
     .imagen_nos {
-        width: 90%;
+        width: 100%;
         border-radius: 8%;
         margin-top: 30px;
         margin-left: 10px;
