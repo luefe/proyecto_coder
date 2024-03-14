@@ -2,6 +2,7 @@
     img {
         opacity: 30%;
         width: 100%;
+        border-radius: 0%;
     }
 
     .container {
@@ -23,6 +24,7 @@
                 ul {
                     color: black;
                 }
+
                 h3 {
                     color: black;
                     text-decoration: underline 1px;
@@ -44,5 +46,58 @@
 
     }
 
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .descripcion {
+        background-color: rgb(200, 155, 243);
+        z-index: 0;
+        height: max-content;
+
+        img {
+            display: none;
+        }
+
+        .container {
+            height: fit-content;
+            z-index: 0;
+        }
+
+        .div0 {
+            margin: 0;
+            padding: 0;
+            z-index: 0;
+            position: inherit;
+            width: 100%;
+            height: max-content;
+
+            .div2 {
+                p {
+                    margin-right: 0;
+                }
+
+                width: 100%;
+            }
+
+            .div {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                div {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .footer_trat {
+        position: absolute;
+        bottom: 0px;
+        z-index: 0;
+    }
 
 }

@@ -1,0 +1,79 @@
+
+@mixin colors ($color, $bgcolor){
+    color: $color;
+    background-color: $bgcolor;
+}
+
+.form_turnos {
+    display: grid;
+    grid-template-rows: 90%, 10%;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+
+    h3 {
+        font-size: x-large;
+        margin: 10px 0 10px 0;
+    }
+
+    img {
+        width: 200px;
+        
+    }
+
+    h4 {
+        a {
+            color: gray;
+        }
+        font-size: medium;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    .recorda {
+        display: flex;
+        width: fit-content;
+    }
+
+    .buttons {
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+            padding: 3px;
+            margin: 10px;
+            @include colors(black, rgb(236, 227, 227) );
+            border: 1px solid gray;
+            border-radius: 10%;
+            &:hover {
+                background-color: gray;
+            }
+        }
+       
+
+        input {
+            padding: 3px;
+            margin-bottom: 10px;
+            @include colors(white, $color_icons );
+            border: none;
+            border-radius: 10%;
+            &:hover {
+
+                background-color: $color_hover;
+    
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .form_turnos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

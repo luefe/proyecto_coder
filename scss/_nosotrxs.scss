@@ -22,7 +22,7 @@
             height: fit-content;
             position: sticky;
             top: 60px;
-            border-bottom: 2px solid blueviolet;
+            border-bottom: 2px solid $color_icons;
             margin-top: 0;
             padding-top: 15px;
             z-index: 1;
@@ -80,7 +80,7 @@
         flex-direction: column;
         position: sticky;
         top: 60px;
-        border-bottom: 2px solid blueviolet;
+        border-bottom: 2px solid $color_icons;
         margin-top: 0;
         padding-top: 15px;
         z-index: 1;

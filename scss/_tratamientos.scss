@@ -26,7 +26,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            text-decoration: underline 2px blueviolet;
+            text-decoration: underline 2px $color_icons;
             margin-right: 20px;
             margin-left: 20px;
             color: gray;
@@ -42,10 +42,10 @@
                 opacity: 100%;
                 transition: opacity 0.5s;
                 border-radius: 10%;
-            }
 
-            img:hover {
-                opacity: 50%;
+                &:hover {
+                    opacity: 50%;
+                }
             }
         }
     }
@@ -71,8 +71,8 @@
     padding-top: 15px;
     margin-left: 50px;
     margin-right: 50px;
-    text-decoration: underline blueviolet 2px;
-    border-top: 2px solid rgb(192, 170, 197);
+    text-decoration: underline $color_icons 2px;
+    border-top: 2px solid $color_lines;
 }
 
 section {
@@ -127,26 +127,24 @@ section {
                         border-radius: 6%;
                         opacity: 100%;
                         transition: opacity 0.5s;
-                    }
 
-                    img:hover {
+                        &:hover{
                         opacity: 50%;
                     }
-
-
+                    }
 
                 }
             }
 
 
             .btn {
-                background-color: blueviolet;
+                background-color: $color_icons;
                 border: 0px;
                 margin-bottom: 10px;
-            }
 
-            .btn:hover {
-                background-color: rgb(173, 121, 221);
+                &:hover {
+                    background-color: $color_hover;
+                }
             }
         }
 

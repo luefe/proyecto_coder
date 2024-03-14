@@ -52,9 +52,9 @@ body header nav ul {
   font-size: larger;
 }
 body header nav ul li {
-  text-decoration: overline blueviolet;
+  text-decoration: overline rgb(84, 31, 134);
 }
-body header nav ul li a {
+body header nav ul li .enlace_nav {
   text-decoration: none;
   color: rgb(58, 55, 77);
   font-size: x-large;
@@ -67,10 +67,10 @@ body header nav ul li .enlace_nav:hover {
   text-decoration: overline 2px violet;
 }
 body header nav .index_img:hover {
-  border-top: 2px solid violet;
+  border-top: 2px solid rgb(84, 31, 134);
 }
 body header nav .carrito:hover {
-  border-top: 2px solid violet;
+  border-top: 2px solid rgb(84, 31, 134);
   padding-top: 3px;
   color: white;
 }
@@ -79,9 +79,7 @@ body .icono_wsp {
   right: 10px;
   bottom: 75px;
   z-index: 2;
-}
-body .icono_wsp img:hover {
-  width: 70px;
+  transform: rotate(45°);
 }
 body footer {
   display: flex;
@@ -95,7 +93,7 @@ body footer form input {
   width: 300px;
 }
 body footer form button {
-  background-color: blueviolet;
+  background-color: rgb(84, 31, 134);
   color: white;
   border: none;
   border-radius: 8%;
@@ -114,7 +112,7 @@ body footer .seguinos div {
 body footer .seguinos div svg {
   width: 40px;
   height: 40px;
-  color: blueviolet;
+  color: rgb(84, 31, 134);
   padding: 4px;
   margin: 2px;
   border: 2px solid gray;
@@ -176,7 +174,7 @@ main .main_center h3 {
   padding: 10px;
 }
 main h1 {
-  color: blueviolet;
+  color: rgb(84, 31, 134);
   font-size: 60px;
   justify-content: center;
   padding: 10px;
@@ -220,6 +218,12 @@ main div .carousel-inner img {
     width: 100%;
     height: auto;
   }
+  h1 {
+    font-size: xx-large;
+  }
+  h2 {
+    font-size: x-large;
+  }
 }
 .nosotrxs {
   display: flex;
@@ -232,7 +236,7 @@ main div .carousel-inner img {
   height: fit-content;
   position: sticky;
   top: 60px;
-  border-bottom: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(84, 31, 134);
   margin-top: 0;
   padding-top: 15px;
   z-index: 1;
@@ -282,7 +286,7 @@ main div .carousel-inner img {
   flex-direction: column;
   position: sticky;
   top: 60px;
-  border-bottom: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(84, 31, 134);
   margin-top: 0;
   padding-top: 15px;
   z-index: 1;
@@ -357,7 +361,7 @@ main div .carousel-inner img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-decoration: underline 2px blueviolet;
+  text-decoration: underline 2px rgb(84, 31, 134);
   margin-right: 20px;
   margin-left: 20px;
   color: gray;
@@ -397,7 +401,7 @@ main div .carousel-inner img {
   padding-top: 15px;
   margin-left: 50px;
   margin-right: 50px;
-  text-decoration: underline blueviolet 2px;
+  text-decoration: underline rgb(84, 31, 134) 2px;
   border-top: 2px solid rgb(192, 170, 197);
 }
 
@@ -447,12 +451,12 @@ section .row .col-6 .card a img:hover {
   opacity: 50%;
 }
 section .row .col-6 .btn {
-  background-color: blueviolet;
+  background-color: rgb(84, 31, 134);
   border: 0px;
   margin-bottom: 10px;
 }
 section .row .col-6 .btn:hover {
-  background-color: rgb(173, 121, 221);
+  background-color: rgb(163, 84, 238);
 }
 
 @media screen and (max-width: 500px) {
@@ -495,7 +499,7 @@ section .row .col-6 .btn:hover {
   width: 50px;
   height: 50px;
   margin-right: 10px;
-  color: blueviolet;
+  color: rgb(84, 31, 134);
 }
 .contacto h3 {
   font-size: x-large;
@@ -525,6 +529,7 @@ section .row .col-6 .btn:hover {
 .descripcion img {
   opacity: 30%;
   width: 100%;
+  border-radius: 0%;
 }
 .descripcion .container .div0 {
   position: absolute;
@@ -550,6 +555,196 @@ section .row .col-6 .btn:hover {
 }
 .descripcion .container .div0 .div div {
   width: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .descripcion {
+    background-color: rgb(200, 155, 243);
+    z-index: 0;
+    height: max-content;
+  }
+  .descripcion img {
+    display: none;
+  }
+  .descripcion .container {
+    height: fit-content;
+    z-index: 0;
+  }
+  .descripcion .div0 {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    position: inherit;
+    width: 100%;
+    height: max-content;
+  }
+  .descripcion .div0 .div2, .descripcion .container .div0 .div, .descripcion .container .div0 .div div {
+    width: 100%;
+  }
+  .descripcion .div0 .div2 p, .descripcion .container .div0 .div p {
+    margin-right: 0;
+  }
+  .descripcion .div0 .div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .descripcion .div0 .div div {
+    width: 100%;
+  }
+  .footer_trat {
+    position: absolute;
+    bottom: 0px;
+    z-index: 0;
+  }
+}
+.form_turnos {
+  display: grid;
+  grid-template-rows: 90%, 10%;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+}
+.form_turnos h3 {
+  font-size: x-large;
+  margin: 10px 0 10px 0;
+}
+.form_turnos img {
+  width: 200px;
+}
+.form_turnos h4 {
+  font-size: medium;
+}
+.form_turnos h4 a {
+  color: gray;
+}
+.form_turnos p {
+  font-size: large;
+}
+.form_turnos .recorda {
+  display: flex;
+  width: fit-content;
+}
+.form_turnos .buttons {
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form_turnos .buttons button {
+  padding: 3px;
+  margin: 10px;
+  color: black;
+  background-color: rgb(236, 227, 227);
+  border: 1px solid gray;
+  border-radius: 10%;
+}
+.form_turnos .buttons button:hover {
+  background-color: gray;
+}
+.form_turnos .buttons input {
+  padding: 3px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: rgb(84, 31, 134);
+  border: none;
+  border-radius: 10%;
+}
+.form_turnos .buttons input:hover {
+  background-color: rgb(163, 84, 238);
+}
+
+@media screen and (max-width: 500px) {
+  .form_turnos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@keyframes shake {
+  0% {
+    rotate: 0deg;
+    width: 40px;
+  }
+  4% {
+    rotate: 30deg;
+    width: 70px;
+  }
+  8% {
+    rotate: 0deg;
+    width: 70px;
+  }
+  12% {
+    rotate: -30deg;
+    width: 70px;
+  }
+  16% {
+    rotate: 0deg;
+    width: 70px;
+  }
+  20% {
+    rotate: 30deg;
+    width: 70px;
+  }
+  24% {
+    rotate: 0deg;
+    width: 70px;
+  }
+  28% {
+    rotate: -30deg;
+    width: 70px;
+  }
+  32% {
+    rotate: 0deg;
+    width: 70px;
+  }
+  32% {
+    rotate: 0deg;
+    width: 70px;
+  }
+  40% {
+    rotate: 0deg;
+    width: 40px;
+  }
+  100% {
+    rotate: 0deg;
+    width: 40px;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.icono_wsp img {
+  animation-name: shake;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-duration: 4s;
+  animation-delay: 7s;
+}
+.icono_wsp img:hover {
+  width: 70px;
+}
+
+.carousel, .servicios img, .imagen_nos, .img_mobile {
+  animation-name: appear;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+}
+
+.form_turnos input:focus {
+  border: 2px solid blueviolet;
 }
 
 /*# sourceMappingURL=style.css.map */

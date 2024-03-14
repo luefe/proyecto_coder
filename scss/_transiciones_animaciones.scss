@@ -1,0 +1,125 @@
+@keyframes shake {
+    0% {
+        rotate: 0deg;
+        width: 40px;
+    }
+
+    4% {
+        rotate: 30deg;
+        width: 70px;
+    }
+
+    8% {
+        rotate: 0deg;
+        width: 70px;
+    }
+
+    12% {
+        rotate: -30deg;
+        width: 70px;
+    }
+
+    16% {
+        rotate: 0deg;
+        width: 70px;
+    }
+
+    20% {
+        rotate: 30deg;
+        width: 70px;
+    }
+
+    24% {
+        rotate: 0deg;
+        width: 70px;
+    }
+
+    28% {
+        rotate: -30deg;
+        width: 70px;
+    }
+
+    32% {
+        rotate: 0deg;
+        width: 70px;
+    }
+
+    32% {
+        rotate: 0deg;
+        width: 70px;
+    }
+
+    40% {
+        rotate: 0deg;
+        width: 40px;
+    }
+
+    100% {
+        rotate: 0deg;
+        width: 40px;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.icono_wsp {
+
+
+    img {
+        animation-name: shake;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        animation-duration: 4s;
+        animation-delay: 7s;
+
+        &:hover {
+            width: 70px;
+        }
+    }
+
+}
+
+.carousel {
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+}
+
+.img_mobile {
+    @extend .carousel;
+}
+
+.imagen_nos {
+    @extend .carousel;
+}
+
+.servicios {
+    img {
+        @extend .carousel;
+    }
+}
+
+.form_turnos {
+    input:focus {
+        border: 2px solid blueviolet;
+    }
+}

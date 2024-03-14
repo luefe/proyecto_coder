@@ -13,7 +13,7 @@
     svg {
         @include sizes(50px, 50px);
         margin-right: 10px;
-        color: blueviolet;
+        color: $color_icons;
     }
 
     h3 {
